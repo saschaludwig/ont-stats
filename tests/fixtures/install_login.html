@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Install Wizard</title>
+  <script language="Javascript">
+    var sid = 'abc12345';
+    function uiApply() {
+      var passwd = hex_md5((document.passWarning.LoginPassword.value)+":"+sid);
+      document.passWarning.LoginPasswordValue.value = passwd;
+    }
+  </script>
+</head>
+<body>
+  <form name="passWarning" method="post" action="install_login.cgi">
+    <input name="Loginuser" type="text" />
+    <input name="LoginPassword" type="password" />
+    <input name="LoginPasswordValue" type="hidden" />
+    <input name="submitValue" type="hidden" />
+    <input type="submit" value="OK" />
+  </form>
+</body>
+</html>

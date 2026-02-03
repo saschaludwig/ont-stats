@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Install Wizard</title>
+<script type='text/javascript'>
+var gponPasswd = "AABBCCDD1122334455EE";
+var gponStatus = "Connected";
+var gponSubmit = "";
+var countryCode = "XX";
+
+function doLoad() {
+    document.getElementById("GPONPassword").value = gponPasswd;
+}
+</script>
+</head>
+<body onload='doLoad();'>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <form class="form-horizontal" name="identifier_form">
+            <h3>ONT Installation</h3>
+            <fieldset>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">Neue ONT ID (PLOAM psw)</label>
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text" name="NewGPONPassword" id="NewGPONPassword" maxlength="20" value="">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>

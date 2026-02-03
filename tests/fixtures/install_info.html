@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Install Wizard</title>
+<script language="JavaScript">
+var gponPasswd = "AABBCCDD1122334455EE";
+
+function doLoad() {
+    document.getElementById("GPONPassword").value = gponPasswd;
+}
+</script>
+</head>
+<body onload='doLoad();'>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <form class="form-horizontal">
+            <h3>Weitere ONT Informationen</h3>
+            <fieldset>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">Aktuelle ONT ID</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='GPONPassword' id="GPONPassword" maxlength='64' readonly="readonly">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">Händler ID</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='text_Username' maxlength='64' readonly="readonly" value="MitraStar">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">Hardwareversion</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='text_Username' maxlength='64' readonly="readonly" value="10">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">Aktive Softwareversion</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='text_Username' maxlength='64' readonly="readonly" value="FW_v1.0_EXAMPLE">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">Standby Softwareversion</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='text_Username' maxlength='64' readonly="readonly" value="FW_v0.9_EXAMPLE">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">Landesvorwahl</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='text_Username' maxlength='64' readonly="readonly" value="XX">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">Seriennummer</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='text_Username' maxlength='64' readonly="readonly" value="001122334455">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">MAC-Adresse</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='text_Username' maxlength='64' readonly="readonly" value="00:11:22:33:44:55">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">Optische Leistung (dBm)</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='text_Username' maxlength='64' readonly="readonly" value="-12.34">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idTextPppoeUser" class="col-sm-4 control-label">GPON-Seriennummer</label>
+                    <div class="col-sm-5">
+                        <input type='text' class="form-control" name='text_Username' maxlength='64' readonly="readonly" value="MSTC00000000">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>
